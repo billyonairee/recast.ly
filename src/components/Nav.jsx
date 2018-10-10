@@ -1,7 +1,11 @@
-var Nav = () => (
+var Nav = props => (
   <nav className="navbar">
     <div className="col-md-6 col-md-offset-3">
-      <Search />
+      <Search
+        inputValue={props.inputValue}
+        searchVideo={props.searchVideo}
+        updateInputValue={props.updateInputValue}
+      />
     </div>
   </nav>
 );

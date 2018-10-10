@@ -8,7 +8,8 @@
     "test": "live-server --open=./SpecRunner.html --port=8081",
     "test-puppeteer": "mocha test.mocha.js",
     "precommit": "lint-staged",
-    "lint": "eslint \"src/**\""
+    "lint": "eslint \"src/**\"",
+    "start": "npx babel src --watch --out-dir compiled --presets @babel/preset-react"
   },
   "lint-staged": {
     "linters": {
